@@ -1,5 +1,4 @@
 var itemHeight = (function(items, user_options) {
-	var start = performance.now();
 	if (typeof items == 'string') {
 		items = document.querySelectorAll(items)
 	}
@@ -27,8 +26,6 @@ var itemHeight = (function(items, user_options) {
 	} else {
 		run();
 	}
-
-	var end = performance.now();
 
 	function fillRows() {
 		var row = [];
